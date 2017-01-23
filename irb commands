@@ -11,4 +11,4 @@ class Student
   end
 
 DataMapper.finalize
-DataMapper.auto_update!
+DataMapper.auto_upgrade!
