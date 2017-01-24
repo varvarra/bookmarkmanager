@@ -2,7 +2,7 @@ require 'sinatra/base'
 
 class Manager < Sinatra::Base
 
-  get '/' do
+  get '/link' do
     erb :index
   end
 

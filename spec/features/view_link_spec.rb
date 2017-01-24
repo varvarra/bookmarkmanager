@@ -1,6 +1,6 @@
-require 'link'
 
-describe Link do
+
+feature 'Viewing links' do
 
   # it 'Displaying a list of links' do
   #   allow(link).to receive(:view) { :value }
@@ -10,6 +10,11 @@ describe Link do
   scenario 'shows links' do
     Link.create(url: 'http://www.google.com', title: 'Google')
 
-    # visit '/links'
-  end
+    visit '/link'
+    expect(page.status_code).to eq 200
+
+    within 'link' do
+      expect(page).to have_content('Google')
+    end
+ end
 end
