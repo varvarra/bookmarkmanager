@@ -4,7 +4,6 @@ Create a web app that can store bookmarks to other websites.
 
 ## User Stories
 
-
 ```
 As a User
 So I can see my bookmarks
@@ -33,4 +32,13 @@ Update: Update or edit existing entries (SQL - UPDATE)
 
 Destroy: Delete, deactivate or remove existing entries (SQL DELETE)
 
-SQL - Structured Query Language is used to communicate with a database. It's the standard language for relational database management systems.
+SQL - Structured Query Language is used to communicate with a database. It's the standard language for relational database management systems\
+
+DataMapper
+----------
+
+| Ruby objects       | Database objects |
+| -------------------|------------------|
+| Classes            | Tables           |
+| Instances          | Rows             |
+| Instance variables | Columns          |
