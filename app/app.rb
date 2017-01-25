@@ -1,9 +1,9 @@
+ENV["RACK_ENV"] ||= "development"
 require 'sinatra/base'
 require_relative './models/link.rb'
 
-
-
 class BookmarkManager < Sinatra::Base
+
 
   get '/' do
     erb :index
@@ -26,5 +26,4 @@ class BookmarkManager < Sinatra::Base
   end
 
   run! if app_file == $0
-
 end
