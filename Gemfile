@@ -10,6 +10,9 @@ gem 'rspec'
 gem 'capybara'
 gem 'sinatra'
 gem 'dm-transactions'
+
 group :test do
   gem 'database_cleaner'
+  gem 'capybara'
+  gem 'rspec'
 end
