@@ -8,11 +8,11 @@ feature 'Creating links' do
   scenario 'to create a new link' do
     visit '/links/new'
     fill_in 'url', with: 'http://www.twitter.com/'
-    fill_in 'title', with: "Here's my favourite website!"
+    fill_in 'title', with: "I love twitter!"
     click_button("Save Link")
     expect(current_path).to eq '/links'
     # do we need a within here?
-    expect(page).to have_content("Here's my favourite website!")
+    expect(page).to have_content("I love twitter!")
   end
 
 end
