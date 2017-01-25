@@ -1,4 +1,5 @@
 
+
 feature 'Creating links' do
   scenario 'want to save a web page' do
     visit '/links/new'
