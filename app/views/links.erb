@@ -1,5 +1,13 @@
-<h2> Links </h2>
-<% @links.each do |link| %>
-  <%= link.title %>
-  <%= link.url %>
-<% end %>
+<h1> Links </h1>
+<h2> Please, add your links here:</h2>
+<a href="/links/new">Add link</a>
+
+<ul id='links'>
+  <% @links.each do |link| %>
+    <li>
+
+      <a href = <%=link.url%> ><%=link.title%></a>
+
+    </li>
+    <% end %>
+</ul>
