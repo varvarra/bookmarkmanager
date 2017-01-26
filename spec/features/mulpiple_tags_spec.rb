@@ -1,6 +1,8 @@
 feature 'Adding multiple tags' do
   scenario 'want to have multiple tags for a link' do
 
+    register
+    
     visit '/links/new'
     fill_in 'url', with: 'http://www.twitter.com/'
     fill_in 'title', with: "Twitter"

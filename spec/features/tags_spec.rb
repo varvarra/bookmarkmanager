@@ -1,6 +1,9 @@
 feature 'Adding tags' do
 
   scenario 'to add tag to a link' do
+
+    register
+
     visit '/links/new'
     fill_in 'url', with: 'http://www.twitter.com/'
     fill_in 'title', with: "Twitter"

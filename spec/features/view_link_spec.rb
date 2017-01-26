@@ -1,6 +1,9 @@
 feature 'Viewing links' do
 
   scenario 'shows links' do
+
+    register
+    
     Link.create(url: 'http://www.google.com', title: 'Google')
 
     visit '/links'
